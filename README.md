@@ -13,7 +13,7 @@ A conversion-focused landing page for a (fictional) reformer Pilates studio in A
 - **Urgency without tricks:** promo bar with trial spots left, "only 2 spots left" labels in the schedule.
 - **Sticky "Book" button on mobile** that appears after the hero and hides when the form is on screen.
 - **Social proof:** rating, member reviews, real studio photos.
-- **AI assistant chat:** answers questions about classes, prices and the schedule from the studio's own data and invites visitors to book (free open-source model on Cloudflare Workers AI). Code: [brightmove-chat](https://github.com/woaquw/brightmove-chat).
+- **AI assistant chat:** answers questions about classes, prices and the schedule from the studio's own data and invites visitors to book (free open-source model on Cloudflare Workers AI). Code: [ai-site-assistant](https://github.com/woaquw/ai-site-assistant).
 
 ## Features
 
