@@ -1,19 +1,27 @@
 # Brightmove Studio — Landing Page
 
-A responsive landing page for a (fictional) Pilates studio: hero with a clear call to action, class overview, a weekly schedule filtered by day, pricing, testimonials, FAQ and a booking form with validation.
+A conversion-focused landing page for a (fictional) reformer Pilates studio in Austin, TX. The goal of the page is one action: **book a free trial class**.
 
 **Live demo:** https://woaquw.github.io/brightmove-studio/
 
 ![Desktop and mobile preview](docs/preview.png)
 
-## Highlights
+## What makes it convert
 
-- **Fast:** plain HTML, CSS and JavaScript, no frameworks or build step. No images to download: all visuals are CSS and inline SVG.
+- **"Find your class in 30 seconds" quiz:** three questions (goal, experience, preferred time) → a matched class, the reason it fits, and the next free slots at the visitor's preferred time. One click pre-fills the booking form.
+- **Live "next class" card** in the hero, calculated from the schedule and the current time.
+- **Urgency without tricks:** promo bar with trial spots left, "only 2 spots left" labels in the schedule.
+- **Sticky "Book" button on mobile** that appears after the hero and hides when the form is on screen.
+- **Social proof:** rating, member reviews, real studio photos.
+
+## Features
+
+- **Interactive schedule:** day tabs (opens on today), 12-hour US time, spots left, full classes disabled, arrow-key navigation.
+- **Booking form:** inline validation with clear messages, spam honeypot, loading and success states; demo mode or real submissions to any form backend.
 - **Responsive:** tested at 375 px (phone), 768 px (tablet) and desktop widths, with a mobile menu.
-- **Interactive schedule:** day tabs (opens on today), spots left, full classes disabled, keyboard arrow navigation. "Book" pre-fills the form with the chosen class.
-- **Booking form:** inline validation with clear error messages, spam honeypot, loading and success states. Works in demo mode or sends real submissions to any form backend.
+- **Fast:** plain HTML, CSS and JavaScript, no frameworks or build step. Responsive images (`srcset`), lazy loading below the fold, hero image prioritized.
 - **Accessible:** semantic HTML, labels on every field, visible focus, skip link, `aria` states, respects "reduce motion".
-- **SEO basics:** meta description, Open Graph tags, schema.org `LocalBusiness` data.
+- **SEO basics:** meta description, Open Graph tags, schema.org local business data.
 
 ## Receive real form submissions
 
@@ -36,7 +44,7 @@ Then open http://localhost:8000.
 ## Customize
 
 - Colors and fonts: CSS variables at the top of `styles.css`.
-- Schedule: the `SCHEDULE` object in `script.js`.
+- Schedule, class descriptions and quiz logic: `script.js` (`SCHEDULE`, `CLASSES`, `pickClass`).
 - Texts and prices: `index.html`.
 
-The studio, people and reviews are fictional; this is a portfolio project.
+Photos from [Unsplash](https://unsplash.com). The studio, people and reviews are fictional; this is a portfolio project.

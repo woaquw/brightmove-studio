@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brightmove Studio — Pilates & Mobility in Warsaw</title>
-  <meta name="description" content="Small-group reformer and mat Pilates in Warsaw. Classes for beginners and advanced, flexible memberships, free trial class.">
+  <title>Brightmove Studio — Reformer Pilates in Austin, TX</title>
+  <meta name="description" content="Small-group reformer and mat Pilates in East Austin. Max 8 people per class, certified instructors, first class free.">
   <meta name="theme-color" content="#1f3b34">
-  <meta property="og:title" content="Brightmove Studio — Pilates & Mobility in Warsaw">
-  <meta property="og:description" content="Small-group Pilates for every level. Book a free trial class.">
+  <meta property="og:title" content="Brightmove Studio — Reformer Pilates in Austin">
+  <meta property="og:description" content="Small-group Pilates for every level. Your first class is free.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1747238415033-b74eec07eb59?w=1200&q=70&auto=format">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f3b34'/%3E%3Cpath d='M18 44c6-14 22-14 28 0' stroke='%23e9b08f' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='6' fill='%23e9b08f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -20,13 +22,16 @@
     "@type": "SportsActivityLocation",
     "name": "Brightmove Studio",
     "description": "Small-group reformer and mat Pilates studio.",
-    "address": {"@type": "PostalAddress", "streetAddress": "ul. Przykładowa 12", "addressLocality": "Warsaw", "addressCountry": "PL"},
-    "openingHours": ["Mo-Fr 07:00-21:00", "Sa-Su 09:00-15:00"]
+    "address": {"@type": "PostalAddress", "streetAddress": "123 Example Ave", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"},
+    "openingHours": ["Mo-Fr 06:30-21:00", "Sa-Su 08:00-14:00"],
+    "priceRange": "$$"
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="promo">First class free · <strong id="promoSpots">6 trial spots</strong> left this week · <a href="#book">Claim yours →</a></div>
 
   <header class="header" id="top">
     <div class="container header__inner">
@@ -35,10 +40,10 @@
         <span>Brightmove</span>
       </a>
       <nav class="nav" id="nav" aria-label="Main">
+        <a href="#quiz">Find your class</a>
         <a href="#classes">Classes</a>
         <a href="#schedule">Schedule</a>
         <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
         <a class="btn btn--small" href="#book">Book a free class</a>
       </nav>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
@@ -52,70 +57,164 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__text">
-          <p class="eyebrow">Pilates studio · Mokotów, Warsaw</p>
-          <h1>Move better.<br><em>Feel stronger</em> every week.</h1>
-          <p class="lead">Small groups of up to 8 people, certified instructors and a plan built around your body. Your first class is on us.</p>
+          <p class="eyebrow">Reformer Pilates · East Austin</p>
+          <h1>Stronger core.<br>Better posture.<br><em>In 55 minutes.</em></h1>
+          <p class="lead">Small groups of max 8 people, certified instructors and a plan built around your body. Try your first class free, no strings attached.</p>
           <div class="hero__actions">
-            <a class="btn" href="#book">Book a free trial class</a>
-            <a class="btn btn--ghost" href="#schedule">See the schedule</a>
+            <a class="btn" href="#book">Book my free class</a>
+            <a class="btn btn--ghost" href="#quiz">Which class is for me?</a>
           </div>
-          <ul class="hero__stats" aria-label="Studio facts">
-            <li><strong>8</strong><span>people max<br>per class</span></li>
-            <li><strong>40+</strong><span>classes<br>every week</span></li>
-            <li><strong>4.9</strong><span>average<br>member rating</span></li>
-          </ul>
+          <div class="rating">
+            <div class="avatars" aria-hidden="true"><span>S</span><span>D</span><span>P</span><span>+</span></div>
+            <p><strong>★★★★★ 4.9</strong> from 380+ members</p>
+          </div>
         </div>
-        <div class="hero__art" aria-hidden="true">
-          <div class="arch arch--back"></div>
-          <div class="arch arch--front">
-            <svg viewBox="0 0 200 260" class="figure">
-              <circle cx="100" cy="92" r="42"/>
-              <path d="M20 170 C 50 150, 70 150, 100 170 S 150 190, 180 170"/>
-              <path d="M20 200 C 50 180, 70 180, 100 200 S 150 220, 180 200" opacity=".7"/>
-              <path d="M20 230 C 50 210, 70 210, 100 230 S 150 250, 180 230" opacity=".45"/>
-            </svg>
+
+        <div class="hero__media">
+          <div class="hero__photo">
+            <img src="https://images.unsplash.com/photo-1747238415033-b74eec07eb59?w=900&q=70&auto=format"
+                 srcset="https://images.unsplash.com/photo-1747238415033-b74eec07eb59?w=600&q=70&auto=format 600w,
+                         https://images.unsplash.com/photo-1747238415033-b74eec07eb59?w=900&q=70&auto=format 900w,
+                         https://images.unsplash.com/photo-1747238415033-b74eec07eb59?w=1300&q=70&auto=format 1300w"
+                 sizes="(max-width: 820px) 90vw, 45vw"
+                 width="900" height="1125" alt="Woman doing a Pilates exercise on a reformer in a bright studio with arched mirrors" fetchpriority="high">
           </div>
-          <div class="float-card">
+          <div class="float-card float-card--top">
             <span class="dot"></span>
-            <div><strong>Next class: Reformer Flow</strong><small>Today · 18:30 · 3 spots left</small></div>
+            <div><strong id="nextClassName">Reformer Flow</strong><small id="nextClassMeta">Today · 18:30 · 3 spots left</small></div>
+          </div>
+          <div class="float-card float-card--bottom">
+            <strong class="big">-32%</strong>
+            <small>less back pain reported<br>after 8 weeks*</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Max 8 people per class</span><span>✦</span><span>Certified instructors</span><span>✦</span><span>First class free</span><span>✦</span><span>No contracts</span><span>✦</span><span>Beginner friendly</span><span>✦</span>
+        <span>Max 8 people per class</span><span>✦</span><span>Certified instructors</span><span>✦</span><span>First class free</span><span>✦</span><span>No contracts</span><span>✦</span><span>Beginner friendly</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- Quiz -->
+    <section class="section" id="quiz">
+      <div class="container quiz">
+        <div class="quiz__intro reveal">
+          <p class="eyebrow">Not sure where to start?</p>
+          <h2>Find your class<br>in 30 seconds</h2>
+          <p>Answer three quick questions and we will match you with the right class and the next free spots.</p>
+          <div class="quiz__progress" aria-hidden="true"><span id="quizBar"></span></div>
+        </div>
+
+        <div class="quiz__card reveal" id="quizCard" aria-live="polite">
+          <div class="quiz__step is-active" data-step="goal">
+            <p class="quiz__count">Question 1 of 3</p>
+            <h3>What is your main goal?</h3>
+            <div class="quiz__options">
+              <button type="button" data-value="strength">💪 Get stronger and toned</button>
+              <button type="button" data-value="back">🧍 Fix posture and back pain</button>
+              <button type="button" data-value="flex">🤸 Become more flexible</button>
+              <button type="button" data-value="energy">⚡ Burn energy and sweat</button>
+            </div>
+          </div>
+          <div class="quiz__step" data-step="level">
+            <p class="quiz__count">Question 2 of 3</p>
+            <h3>Have you done Pilates before?</h3>
+            <div class="quiz__options">
+              <button type="button" data-value="new">Never, I am brand new</button>
+              <button type="button" data-value="some">A few times</button>
+              <button type="button" data-value="regular">Yes, I train regularly</button>
+            </div>
+          </div>
+          <div class="quiz__step" data-step="time">
+            <p class="quiz__count">Question 3 of 3</p>
+            <h3>When do you prefer to train?</h3>
+            <div class="quiz__options">
+              <button type="button" data-value="morning">🌅 Morning, before work</button>
+              <button type="button" data-value="midday">☀️ Lunch break</button>
+              <button type="button" data-value="evening">🌙 Evening</button>
+              <button type="button" data-value="weekend">🗓️ Weekends</button>
+            </div>
+          </div>
+          <div class="quiz__step quiz__result" data-step="result">
+            <p class="quiz__count">Your match</p>
+            <div class="result">
+              <img id="resultImg" alt="" width="240" height="300">
+              <div>
+                <h3 id="resultName">Reformer Flow</h3>
+                <p id="resultWhy"></p>
+                <ul class="result__slots" id="resultSlots"></ul>
+              </div>
+            </div>
+            <div class="quiz__actions">
+              <a class="btn" href="#book" id="resultBook">Book this class free</a>
+              <button type="button" class="link-btn" id="quizRestart">Start over</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Classes -->
-    <section class="section" id="classes">
+    <section class="section section--tint" id="classes">
       <div class="container">
         <div class="section__head reveal">
           <p class="eyebrow">Classes</p>
-          <h2>Find the class that fits you</h2>
-          <p>Every class is 55 minutes and adapted to your level. Not sure where to start? Book a free trial and we will suggest one.</p>
+          <h2>Four ways to move</h2>
+          <p>Every class is 55 minutes and adapted to your level.</p>
         </div>
         <div class="cards">
           <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">◐</div>
-            <h3>Reformer Flow</h3>
-            <p>Full-body strength on the reformer machine. Spring resistance builds muscle without stress on the joints.</p>
-            <span class="tag">All levels</span>
+            <img src="https://images.unsplash.com/photo-1747240549807-fc3962949818?w=600&q=70&auto=format" width="600" height="420" loading="lazy" alt="Woman in a plank position on a reformer machine">
+            <div class="card__body">
+              <h3>Reformer Flow</h3>
+              <p>Full-body strength on the reformer. Spring resistance builds muscle without stress on the joints.</p>
+              <span class="tag">All levels</span>
+            </div>
           </article>
           <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">◯</div>
-            <h3>Mat Pilates</h3>
-            <p>Classic Pilates on the mat. Core control, posture and breathing: the base for everything else.</p>
-            <span class="tag">Beginner friendly</span>
+            <img src="https://images.unsplash.com/photo-1763403921315-f2ef8697199f?w=600&q=70&auto=format" width="600" height="420" loading="lazy" alt="Three women doing a bridge pose on mats">
+            <div class="card__body">
+              <h3>Mat Pilates</h3>
+              <p>Classic Pilates on the mat. Core control, posture and breathing: the base for everything else.</p>
+              <span class="tag">Beginner friendly</span>
+            </div>
           </article>
           <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">◇</div>
-            <h3>Mobility & Stretch</h3>
-            <p>Slow, deep work on hips, spine and shoulders. Ideal if you sit at a desk all day.</p>
-            <span class="tag">Recovery</span>
+            <img src="https://images.unsplash.com/photo-1552196527-bffef41ef674?w=600&q=70&auto=format" width="600" height="420" loading="lazy" alt="Woman stretching her arms and back">
+            <div class="card__body">
+              <h3>Mobility &amp; Stretch</h3>
+              <p>Slow, deep work on hips, spine and shoulders. Made for people who sit at a desk all day.</p>
+              <span class="tag">Recovery</span>
+            </div>
           </article>
           <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">△</div>
-            <h3>Power Pilates</h3>
-            <p>Faster tempo, heavier springs and short cardio bursts for people who already know the basics.</p>
-            <span class="tag">Intermediate</span>
+            <img src="https://images.unsplash.com/photo-1747239685045-fcbcf98985db?w=600&q=70&auto=format" width="600" height="420" loading="lazy" alt="Woman doing a standing leg exercise on a reformer">
+            <div class="card__body">
+              <h3>Power Pilates</h3>
+              <p>Faster tempo, heavier springs and short cardio bursts for people who know the basics.</p>
+              <span class="tag">Intermediate</span>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio gallery -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">The studio</p>
+          <h2>Calm, bright and never crowded</h2>
+        </div>
+        <div class="gallery reveal">
+          <img class="g1" src="https://images.unsplash.com/photo-1783841193384-4269c68aa050?w=900&q=70&auto=format" width="900" height="600" loading="lazy" alt="Modern Pilates studio with a row of reformer machines">
+          <img class="g2" src="https://images.unsplash.com/photo-1747239202356-764770773c9a?w=600&q=70&auto=format" width="600" height="800" loading="lazy" alt="Woman in a side stretch on a reformer">
+          <img class="g3" src="https://images.unsplash.com/photo-1717500252297-b09508db7ceb?w=600&q=70&auto=format" width="600" height="600" loading="lazy" alt="Wooden Pilates equipment next to a large plant">
+          <img class="g4" src="https://images.unsplash.com/photo-1747239069226-55382c570116?w=600&q=70&auto=format" width="600" height="600" loading="lazy" alt="Close-up of a leg exercise with reformer straps">
         </div>
       </div>
     </section>
@@ -138,33 +237,33 @@
         <div class="section__head reveal">
           <p class="eyebrow">Pricing</p>
           <h2>Simple memberships, no contracts</h2>
-          <p>Pause or cancel any time. Prices in PLN.</p>
+          <p>Pause or cancel any time. Prices in USD.</p>
         </div>
         <div class="plans">
           <article class="plan reveal">
-            <h3>Single class</h3>
-            <p class="price"><strong>75</strong> zł</p>
+            <h3>Drop-in</h3>
+            <p class="price"><strong>$29</strong> / class</p>
             <ul>
               <li>Any class in the schedule</li>
               <li>Valid for 30 days</li>
               <li>Mats and equipment included</li>
             </ul>
-            <a class="btn btn--ghost" href="#book" data-plan="Single class">Choose</a>
+            <a class="btn btn--ghost" href="#book" data-plan="Drop-in">Choose</a>
           </article>
           <article class="plan plan--featured reveal">
             <span class="badge">Most popular</span>
             <h3>8 classes / month</h3>
-            <p class="price"><strong>440</strong> zł</p>
+            <p class="price"><strong>$179</strong> / month</p>
             <ul>
-              <li>55 zł per class</li>
+              <li>Only $22 per class</li>
               <li>Priority booking 7 days ahead</li>
-              <li>1 guest pass per month</li>
+              <li>1 free guest pass per month</li>
             </ul>
             <a class="btn" href="#book" data-plan="8 classes / month">Choose</a>
           </article>
           <article class="plan reveal">
             <h3>Unlimited</h3>
-            <p class="price"><strong>590</strong> zł</p>
+            <p class="price"><strong>$249</strong> / month</p>
             <ul>
               <li>Every class, every day</li>
               <li>Free posture assessment</li>
@@ -185,16 +284,16 @@
         </div>
         <div class="quotes">
           <figure class="quote reveal">
-            <blockquote>“My back pain from sitting at work is basically gone. The instructors notice every small mistake.”</blockquote>
-            <figcaption>Marta, member since spring</figcaption>
+            <blockquote>“My lower back pain from sitting at work is basically gone. The instructors notice every small mistake.”</blockquote>
+            <figcaption><strong>Sarah M.</strong> · member for 6 months</figcaption>
           </figure>
           <figure class="quote reveal">
-            <blockquote>“I was nervous as a total beginner, but the small groups made it easy. I now come three times a week.”</blockquote>
-            <figcaption>Piotr, Unlimited plan</figcaption>
+            <blockquote>“I was nervous as a total beginner, but the small groups made it easy. Now I come three times a week.”</blockquote>
+            <figcaption><strong>Daniel R.</strong> · Unlimited plan</figcaption>
           </figure>
           <figure class="quote reveal">
             <blockquote>“Booking is simple, the studio is calm and clean, and I can feel the difference in my running.”</blockquote>
-            <figcaption>Ola, 8 classes / month</figcaption>
+            <figcaption><strong>Priya K.</strong> · 8 classes / month</figcaption>
           </figure>
         </div>
       </div>
@@ -233,12 +332,17 @@
       <div class="container book">
         <div class="book__info reveal">
           <p class="eyebrow">Free trial</p>
-          <h2>Book your first class</h2>
-          <p>Leave your details and we will confirm a time within one working day.</p>
+          <h2>Book your first class free</h2>
+          <p>Leave your details and we will confirm a time within one business day.</p>
+          <ul class="checks">
+            <li>No credit card needed</li>
+            <li>Grip socks on us for your first visit</li>
+            <li>Personal intro with your instructor</li>
+          </ul>
           <ul class="contact-list">
-            <li><span>Address</span>ul. Przykładowa 12, Mokotów, Warsaw</li>
-            <li><span>Hours</span>Mon–Fri 7:00–21:00 · Sat–Sun 9:00–15:00</li>
-            <li><span>Phone</span>+48 000 000 000</li>
+            <li><span>Address</span>123 Example Ave, East Austin, TX</li>
+            <li><span>Hours</span>Mon–Fri 6:30 am–9 pm · Sat–Sun 8 am–2 pm</li>
+            <li><span>Phone</span>(512) 555-0142</li>
           </ul>
         </div>
 
@@ -268,7 +372,7 @@
                 <option value="">Choose a class</option>
                 <option>Reformer Flow</option>
                 <option>Mat Pilates</option>
-                <option>Mobility & Stretch</option>
+                <option>Mobility &amp; Stretch</option>
                 <option>Power Pilates</option>
                 <option>Not sure yet</option>
               </select>
@@ -278,7 +382,7 @@
               <label for="plan">Plan <span class="optional">(optional)</span></label>
               <select id="plan" name="plan">
                 <option value="">Just the free trial</option>
-                <option>Single class</option>
+                <option>Drop-in</option>
                 <option>8 classes / month</option>
                 <option>Unlimited</option>
               </select>
@@ -288,7 +392,6 @@
             <label for="message">Anything we should know? <span class="optional">(optional)</span></label>
             <textarea id="message" name="message" rows="3" maxlength="600" placeholder="Injuries, preferred times, questions…"></textarea>
           </div>
-          <!-- Honeypot: hidden from people, bots fill it in -->
           <div class="hp" aria-hidden="true">
             <label for="website">Website</label>
             <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
@@ -305,13 +408,15 @@
     </section>
   </main>
 
+  <a class="sticky-cta" href="#book" id="stickyCta">Book your free class</a>
+
   <footer class="footer">
     <div class="container footer__inner">
       <a class="logo logo--light" href="#top">
         <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16"/><path d="M18 44c6-14 22-14 28 0"/><circle cx="32" cy="22" r="6"/></svg>
         <span>Brightmove</span>
       </a>
-      <p>Demo website for a fictional studio, built as a portfolio project.</p>
+      <p>Demo website for a fictional studio, built as a portfolio project. Photos: Unsplash. *Illustrative figure.</p>
       <p>© <span id="year">2026</span> Brightmove Studio</p>
     </div>
   </footer>
