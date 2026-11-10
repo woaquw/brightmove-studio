@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chat.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -422,5 +423,8 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <!-- AI assistant: Cloudflare Worker running a free open-source model -->
+  <script>window.BRIGHTMOVE_CHAT_URL = "https://brightmove-chat.brightmove-chat.workers.dev/chat";</script>
+  <script src="chat.js" defer></script>
 </body>
 </html>
