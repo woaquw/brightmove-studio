@@ -126,7 +126,9 @@
           const data = line.slice(5).trim();
           if (data === "[DONE]") continue;
           try {
-            const token = JSON.parse(data).response;
+            const raw = JSON.parse(data).response;
+            // Numbers can arrive as JSON numbers (0 included), so check for null, not truthiness.
+            const token = raw == null ? "" : String(raw);
             if (token) {
               if (!answer) { reply.classList.remove("is-typing"); reply.textContent = ""; }
               answer += token;
